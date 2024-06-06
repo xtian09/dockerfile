@@ -1,6 +1,6 @@
 set -e
 
-export INSTALLZSH="false"
+export INSTALLZSH="true"
 export INSTALLOHMYZSH="false"
 export INSTALLOHMYZSHCONFIG="false"
 
@@ -65,7 +65,8 @@ install_aosp_packages() {
         lib32ncurses5-dev \
         libncurses5 \
         python-is-python2 \
-        python-crypto"
+        python-crypto \
+        vim"
     apt-get update -y
     apt-get -y install --no-install-recommends ${aosp_packages}
     apt-get -y clean

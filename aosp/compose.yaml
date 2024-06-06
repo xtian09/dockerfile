@@ -1,0 +1,15 @@
+services:
+  vic_play:
+    image: vic:u20
+    restart: always
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - ~/.vic:/home/build/workspace
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [ gpu ]

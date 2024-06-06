@@ -1,0 +1,8 @@
+services:
+  vic_work:
+    image: vic:u20
+    restart: always
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - ~/repo/vic:/home/build/workspace

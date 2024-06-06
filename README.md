@@ -4,12 +4,8 @@
 ### features
 A collection of Dev Container Features managed by Dev Container spec maintainers.
 Utilized some scripts from this repository.
-
 ```shell
 git submodule add https://github.com/devcontainers/features.git features
-```
-```shell
-
 ```
 
 ### aosp
